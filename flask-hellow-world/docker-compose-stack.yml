@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  flask-app:
+    image: sachinpgade/docker-apps
+    ports:
+      - "5000:5000"
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+  redis:
+    image: "redis:alpine"
+
