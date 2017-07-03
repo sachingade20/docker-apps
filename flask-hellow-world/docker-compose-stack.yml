@@ -2,7 +2,7 @@ version: '3'
 
 services:
   flask-app:
-    image: sachinpgade/docker-apps
+    image: 'sachinpgade/docker-apps:flask-latest'
     ports:
       - "5000:5000"
     deploy:
